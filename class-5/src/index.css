@@ -1,3 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input, select, textarea {
+    width: 100%;
+    display: block;
+    clear: both;
+    height: 25px;
+    padding-bottom: 3px;
+}
+
+select{
+    width: 101%;
+    height: 35px;
+}
+
+textarea{
+    height: 100px;
+}
+
+label{
+    float: left;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 10px;
+}
+
+button.success {
+    width: 100%;
+    display: block;
+    height: 30px;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    border: 0;
+}
+
+button.danger {
+    width: 100%;
+    display: block;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: 0;
+}
+
+.success{
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.error{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert{
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.avatar{
+    width: 70px;
+    height: 70px;
+}
+
+.left{
+    width: 30%;
+    float: left;
+}
+
+.right{
+    width: 65%;
+    margin-left: 5%;
+    float: left;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
