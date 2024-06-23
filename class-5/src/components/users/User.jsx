@@ -3,14 +3,14 @@
 import React from "react";
 
 function User({ user, del }) {
-    /* const UserDelete = (id) => {
+    const UserDelete = (id) => {
         del(id);
-    } */
+    }
   return (
     <>
       <div className="mb10">
         <img
-          src="https://avatar.iran.liara.run/public/"
+          src="https://avatar.iran.liara.run/public/boy"
           alt="avatar"
           className="avatar"
         />
@@ -21,7 +21,7 @@ function User({ user, del }) {
             Email: {user.email}<br/>
             Date of Birth: {user.dob}
         </p>
-        <button className="danger">Delete</button>
+        <button className="danger" onClick={() => UserDelete(user.ID)}>Delete</button>
       </div>
     </>
     //onClick={UserDelete(user.ID)}

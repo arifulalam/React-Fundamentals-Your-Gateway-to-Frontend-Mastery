@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const users = [{
+let users = [{
     ID: 1,
     username: 'arifulalam',
     fullname: 'Ariful Alam',
@@ -7,7 +7,7 @@ const users = [{
     email: 'ariful-alam@hotmail.com',
 }];
 
-const posts = [{
+let posts = [{
     ID: 1,
     title: 'Post #1',
     authorId: 1,
@@ -44,7 +44,7 @@ const posts = [{
     isPublished: true,
 }];
 
-const comments = [{
+let comments = [{
     ID: 1,
     authorId: null,
     postId: 1,
