@@ -1,14 +1,12 @@
 /* eslint-disable no-unused-vars */
-import { react, useState } from "react";
+import { React, useState } from "react";
 import logo from "./assets/react.svg";
 import "./App.css";
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-  Router,
   RouterProvider,
-  useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
