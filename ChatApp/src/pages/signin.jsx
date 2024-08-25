@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Signin = () => {
   return (
@@ -17,17 +18,17 @@ const Signin = () => {
             <div className="border border-gray-300 rounded-lg p-6 max-w-md shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] max-md:mx-auto">
               <form className="space-y-4">
                 <div className="mb-8">
-                  <h3 className="text-gray-800 text-3xl font-extrabold">
+                  <h3 className="text-gray-800 text-3xl font-extrabold font-SerifRegular">
                     Sign in
                   </h3>
-                  <p className="text-gray-500 text-sm mt-4 leading-relaxed">
+                  <p className="text-gray-500 text-sm mt-4 leading-relaxed font-SerifRegular">
                     Sign in to your account and explore a world of
                     possibilities. Your journey begins here.
                   </p>
                 </div>
 
                 <div>
-                  <label className="text-gray-800 text-sm mb-2 block">
+                  <label className="text-gray-800 text-sm mb-2 block font-SerifRegular">
                     User name
                   </label>
                   <div className="relative flex items-center">
@@ -59,7 +60,7 @@ const Signin = () => {
                   </div>
                 </div>
                 <div>
-                  <label className="text-gray-800 text-sm mb-2 block">
+                  <label className="text-gray-800 text-sm mb-2 block font-SerifRegular">
                     Password
                   </label>
                   <div className="relative flex items-center">
@@ -99,12 +100,12 @@ const Signin = () => {
                   </div>
 
                   <div className="text-sm">
-                    <a
-                      href="jajvascript:void(0);"
+                    <Link
+                      to="/forgot-password"
                       className="text-blue-600 hover:underline font-semibold"
                     >
                       Forgot your password?
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -119,12 +120,12 @@ const Signin = () => {
 
                 <p className="text-sm !mt-8 text-center text-gray-800">
                   Don&apos;t have an account{" "}
-                  <a
-                    href="javascript:void(0);"
+                  <Link
+                    to="/signup"
                     className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
                   >
                     Register here
-                  </a>
+                  </Link>
                 </p>
               </form>
             </div>
