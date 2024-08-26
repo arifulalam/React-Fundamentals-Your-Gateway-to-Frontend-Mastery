@@ -1,8 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@font-face {
-    font-family: "Serif-Regular";
-    src: url("/fonts/DMSerifText-Regular.ttf");
-}
